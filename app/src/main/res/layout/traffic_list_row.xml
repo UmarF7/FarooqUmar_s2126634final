@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="76dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/trafficRowIcon"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="12dp"
+        android:src="@drawable/ic_other_traffic"
+        android:contentDescription="Traffic situation" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/trafficRowText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/trafficRowLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

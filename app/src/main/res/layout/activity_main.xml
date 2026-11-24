@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Traffic Scotland"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:paddingBottom="5dp" />
+
+    <TextView
+        android:id="@+id/dataStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reading sample data..."
+        android:textSize="13sp"
+        android:paddingBottom="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/incidentsButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Incidents" />
+
+        <Button
+            android:id="@+id/roadworksButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Roadworks" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/roadSearchInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Road (e.g. M8)"
+            android:inputType="textCapCharacters"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/roadSearchButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Find road" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/radiusInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="numberDecimal"
+            android:text="10"
+            android:hint="Radius in km" />
+
+        <Button
+            android:id="@+id/nearbyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Near Glasgow" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fixed location: Glasgow centre (55.8642, -4.2518). Radius in km."
+        android:textSize="12sp"
+        android:paddingBottom="3dp" />
+
+    <TextView
+        android:id="@+id/searchStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select a list or search both feeds."
+        android:textSize="12sp"
+        android:paddingBottom="5dp" />
+
+    <Button
+        android:id="@+id/mapResultsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Map results" />
+
+    <FrameLayout
+        android:id="@+id/fragmentHolder"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

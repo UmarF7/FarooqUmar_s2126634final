@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="traffic_delay">#8B6500</color>
+    <color name="traffic_long">#B45309</color>
+    <color name="traffic_severe">#B42318</color>
+    <color name="traffic_neutral">#506174</color>
+</resources>
